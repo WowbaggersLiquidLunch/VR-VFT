@@ -1,3 +1,56 @@
-# OS X Finder File - Desktop Services Store
+# OS X Files
 .DS_Store
+.AppleDouble
+.LSOverride
 
+
+# Microsoft Windows Files
+[Tt]humbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+
+# Linux Files
+.fuse_hidden*
+.directory
+.nfs*
+
+
+# Backup Files
+*~
+
+
+# MonoDevelop Files
+*.userprefs
+*.usertasks
+*.pidb
+*.resources
+test-results/
+
+
+# Visual Studio Files
+*.user
+*.[Cc]ache
+*.log
+
+
+# Visual Studio 2015 Cache Directory
+/.vs/
+
+
+# Unity3D Generated Meta Files
+*.pidb.meta
+
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+
+# Unity3D Builds
+[Bb]uild/
+*.apk
+*.unitypackage
