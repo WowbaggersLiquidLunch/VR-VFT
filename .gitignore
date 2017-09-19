@@ -38,11 +38,9 @@ test-results/
 *.user
 *.[Cc]ache
 *.log
-
-
-# Visual Studio 2015 Cache Directory
-/.vs/
-
+*.sln
+*.csproj
+.vs/
 
 # Unity3D Generated Meta Files
 *.pidb.meta
@@ -56,3 +54,18 @@ sysinfo.txt
 [Bb]uild/
 *.apk
 *.unitypackage
+
+
+# Unity3D Temporary Files
+obj/
+Temp/
+
+
+# Unity3D Local Cache for Imported Assets
+Library/
+
+
+# Unity3D Asset Store Tools Files
+AssetStoreTools.meta
+AssetStoreTools/
+
