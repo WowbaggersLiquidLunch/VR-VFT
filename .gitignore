@@ -1,12 +1,18 @@
-# OS X Files
+#--------------------
+# OS Generated Files
+#--------------------
+
+# OS X
 .DS_Store
 .DS_Store?
 ._*
 .AppleDouble
 .LSOverride
+.Spotlight-V100
+.Trashes
 
 
-# Microsoft Windows Files
+# Microsoft Windows
 [Tt]humbs.db
 ehthumbs.db
 ehthumbs_vista.db
@@ -16,7 +22,7 @@ $RECYCLE.BIN/
 *.lnk
 
 
-# Linux Files
+# Linux
 .fuse_hidden*
 .directory
 .nfs*
@@ -26,7 +32,18 @@ $RECYCLE.BIN/
 *~
 
 
-# MonoDevelop Files
+#---------------------------------------------
+# Visual Studio / MonoDevelop Generated Files
+#---------------------------------------------
+
+ExportedObj/
+obj/
+*.svd
+*.unityproj
+*.booproj
+
+
+# MonoDevelop
 *.userprefs
 *.usertasks
 *.pidb
@@ -34,13 +51,20 @@ $RECYCLE.BIN/
 test-results/
 
 
-# Visual Studio Files
+# Visual Studio
 *.user
 *.[Cc]ache
 *.log
-*.sln
-*.csproj
+*.suo
+/*.sln
+/*.csproj
 .vs/
+
+
+
+#---------
+# Unity3D
+#---------
 
 # Unity3D Generated Meta Files
 *.pidb.meta
@@ -57,7 +81,6 @@ sysinfo.txt
 
 
 # Unity3D Temporary Files
-obj/
 Temp/
 
 
