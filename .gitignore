@@ -10,7 +10,8 @@
 .LSOverride
 .Spotlight-V100
 .Trashes
-
+Icon\r
+Icon^M
 
 # Microsoft Windows
 [Tt]humbs.db
