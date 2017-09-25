@@ -23,4 +23,3 @@ Name | Description
 master | you know what master is
 spherical-background-shaders | custom shaders for rendering the inside of a sphere instead of the default outside
 git-ref-automated-synchronization | scripts for synchronizing different local and remote references
-readme | for updating README.md
