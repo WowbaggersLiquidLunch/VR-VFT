@@ -1,4 +1,6 @@
-﻿Shader "Custom/Spherical Background" {
+﻿//http://answers.unity3d.com/answers/915304/view.html
+
+Shader "Custom/Spherical Background" {
 	Properties {
 		_MainTex ("Base (RGB)", 2D) = "white" {}
 	}
