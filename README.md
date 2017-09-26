@@ -18,6 +18,7 @@ There is also **.collabignore** for Unity3D's collaboration. Modify it as you ne
 Please **fork** this project, do whatever you want, and then make a **pull request**.
 
 ## Branches 
+Here are the descriptions for each active branch. It might be the best if no two people are working on the same branch at the same time. 
 Name | Description
 ---------|------------
 master | you know what master is
