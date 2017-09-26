@@ -1,4 +1,5 @@
-﻿//http://answers.unity3d.com/answers/915304/view.html
+﻿// http://answers.unity3d.com/answers/915304/view.html
+// I don't know how it works!
 
 Shader "Custom/Spherical Background" {
 	Properties {
