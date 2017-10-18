@@ -1,9 +1,9 @@
 ﻿// http://answers.unity3d.com/answers/915304/view.html
 // I don't know how it works!
 
-Shader "Custom/Spherical Background" {
+Shader "Custom/Simple Interior" {
 	Properties {
-		_MainTex ("Base (RGB)", 2D) = "white" {}
+		_MainTex ("Base (RGB)", 3D) = "white" {}
 	}
 
 	SubShader {
