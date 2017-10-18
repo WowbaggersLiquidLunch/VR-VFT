@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RandomFlash : MonoBehaviour {
-
+	Vector3 lightPosition;
 	// Use this for initialization
 	void Start () {
-		
+		lightPosition = new Vector3 (0, 0, 0);
+		InvokeRepeating ("ChangePosition", 0, 2);
 	}
 	
 	// Update is called once per frame
@@ -28,5 +29,10 @@ public class RandomFlash : MonoBehaviour {
 			finalColor = offColor;
 		}
 		mat.SetColor ("_EmissionColor", finalColor);
+	}
+
+	void ChangePosition () {
+		transform.position = lightPosition;
+		lightPosition = new Vector3 (Random.Range (-10, 10), Random.Range (10, 10), 0);
 	}
 }
