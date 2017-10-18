@@ -29,5 +29,6 @@ master | you know what master is
 demo | things we want to show off, but not ready for relese yet
 spherical-background-shaders | custom shaders for rendering the inside of a sphere instead of the default outside
 making-dots-appear | make dots appear
+environment | really make dots appear
 git-ref-automated-synchronization | scripts for synchronizing different local and remote references (not yet started)
 housekeeping | miscellaneous non-essential stuff
