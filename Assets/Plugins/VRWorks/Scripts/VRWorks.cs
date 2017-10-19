@@ -143,7 +143,7 @@ namespace NVIDIA
       if (m_Camera.stereoEnabled)
       {
         // target size needs to be twice for single pass stereo
-        targetSize = (uint)((UnityEngine.VR.VRSettings.eyeTextureWidth + 0 )<< 17) | (uint)m_Camera.pixelHeight;
+        targetSize = (uint)((UnityEngine.XR.XRSettings.eyeTextureWidth + 0 )<< 17) | (uint)m_Camera.pixelHeight;
       }
       else
       {
@@ -349,7 +349,7 @@ namespace NVIDIA
 
         // Before everything
         uint textureFormat = 1; // kUnityVREyeTextureLayoutSeparate = 1 << 0
-        uint vrState = UnityEngine.VR.VRSettings.enabled ? (uint)PluginExtVRState.kPluginExtVRStateActive : 0;
+        uint vrState = UnityEngine.XR.XRSettings.enabled ? (uint)PluginExtVRState.kPluginExtVRStateActive : 0;
         if (m_Camera.stereoEnabled)
         {
           textureFormat = 1 << 1;// kUnityVREyeTextureLayoutDoubleWide = 1 << 1,                        
