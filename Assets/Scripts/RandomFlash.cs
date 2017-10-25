@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class RandomFlash : MonoBehaviour {
 	Vector3 lightPosition;
 	// Use this for initialization
@@ -12,8 +13,9 @@ public class RandomFlash : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*
 		Renderer renderer = GetComponent<Renderer> ();
-		Material mat = renderer.material;
+        Material mat = renderer.material;
 //		float status = Mathf.PingPong ((Time.time + Random.Range(0.0f, 1.0f)), 10.0f);
 		Color offColor = Color.black;
 		Color onColor = Color.white;
@@ -27,12 +29,13 @@ public class RandomFlash : MonoBehaviour {
 			finalColor = onColor;
 		} else {
 			finalColor = offColor;
-		}
+		}       
 		mat.SetColor ("_EmissionColor", finalColor);
+        */
 	}
 
 	void ChangePosition () {
-		transform.position = lightPosition;
-		lightPosition = new Vector3 (Random.Range (-10, 10), Random.Range (10, 10), 0);
+		transform.localPosition = lightPosition;
+		lightPosition = new Vector3 (Random.Range (-5, 5), 0, Random.Range (-5,5));
 	}
 }
