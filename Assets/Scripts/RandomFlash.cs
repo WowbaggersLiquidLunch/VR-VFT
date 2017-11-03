@@ -5,11 +5,25 @@ using UnityEngine;
 
 public class RandomFlash : MonoBehaviour {
 	Vector3 lightPosition;
+    SteamVR_TrackedController cont;
 	// Use this for initialization
 	void Start () {
 		lightPosition = new Vector3 (0, 0, 0);
-		InvokeRepeating ("ChangePosition", 0, 2);
-	}
+		//InvokeRepeating ("ChangePosition", 0, 2);
+        cont = GetComponent<SteamVR_TrackedController>();
+        if(cont == null)
+        {
+            Debug.Log("Controller is null\n");
+        }
+        cont.TriggerClicked += HandleClick;
+    }
+
+    private void HandleClick(object sender, ClickedEventArgs e)
+    {
+        Debug.Log("Trigger Pressed");
+        ChangePosition();
+        return;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -32,7 +46,7 @@ public class RandomFlash : MonoBehaviour {
 		}       
 		mat.SetColor ("_EmissionColor", finalColor);
         */
-	}
+    }
 
 	void ChangePosition () {
 		transform.localPosition = lightPosition;
