@@ -3,24 +3,25 @@ using System.Collections.Generic;
 
 public class ViewPoint
 {
-    private int _x;
-    private int _y;
+    private float _x;
+    private float _y;
     private List<Flash> _flashes;
 	private int _visits;
 
-	public ViewPoint(int x, int y)
+	public ViewPoint(float x, float y)
 	{
         X = x;
         Y = y;
+        Flashes = new List<Flash>();
 	}
 
-    public int X
+    public float X
     {
 		get { return _x; }
         set { _x = value; }
     }
 
-    public int Y
+    public float Y
     {
 		get {return _y;}
         set { _y = value; }
@@ -36,5 +37,10 @@ public class ViewPoint
 	{
 		get {return Flashes.Count;}
 	}
+
+    public override string ToString()
+    {
+        return "x: " + X + " y: " + Y;
+    }
 }
 

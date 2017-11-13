@@ -14,6 +14,12 @@ public class Flash
 		Seen = seen;
     }
 
+    public Flash(int size)
+    {
+        Size = size;
+        Seen = false;
+    }
+
     public int Size
     {
 		get { return _size; }
