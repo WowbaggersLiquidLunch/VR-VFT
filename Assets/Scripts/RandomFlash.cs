@@ -17,6 +17,7 @@ public class RandomFlash : MonoBehaviour {
 		lightPosition = new Vector3 (0, 0, 0);
         i = 0;
         viewPoints = new List<ViewPoint>(50);
+        /*
         float radius = 50;
         int col = 4;
         float x = (float) -1.5;
@@ -24,7 +25,6 @@ public class RandomFlash : MonoBehaviour {
         float cellDist = radius / 12;
         int counter = 0;
         bool top = true;
-        /*
         while(true) {
             if (col != 10 && top)
             {
@@ -36,7 +36,7 @@ public class RandomFlash : MonoBehaviour {
                 else
                 {
                     viewPoints.Insert(i++, new ViewPoint(x * cellDist, y * cellDist));
-                    x -= col;
+                    x -= col
                     y -= 1;
                     col += 2;
                 }
@@ -76,7 +76,8 @@ public class RandomFlash : MonoBehaviour {
             Debug.Log(vp.ToString());
         }
         */
-		InvokeRepeating ("ChangePosition", 0, 2);
+        InvokeRepeating("ChangePosition", 0, 2);
+        InvokeRepeating("Disappear", (float)0.5, (float)2);
 
     }
 
@@ -97,6 +98,13 @@ public class RandomFlash : MonoBehaviour {
 	void ChangePosition () {
         //viewPoints.Insert(i, new ViewPoint(x, y));
 		lightPosition = new Vector3 (UnityEngine.Random.Range (-5, 5), (float)0.001, UnityEngine.Random.Range (-5,5));
+        transform.localPosition = lightPosition;
+    }
+
+    void Disappear()
+    {
+        //viewPoints.Insert(i, new ViewPoint(x, y));
+        lightPosition = new Vector3(100, (float)0.001, 100);
         transform.localPosition = lightPosition;
     }
 }
